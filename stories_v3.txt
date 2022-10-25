@@ -1,0 +1,340 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: rates
+  steps:
+  - intent: rates
+  - action: utter_rates
+
+- story: location
+  steps:
+  - intent: location
+  - action: utter_location
+
+- story: opening
+  steps:
+  - intent: opening
+  - action: utter_opening
+
+- story: atmfacilities
+  steps:
+  - intent: atmfacilities
+  - action: utter_atmfacilities
+
+- story: atmavail
+  steps:
+  - intent: atmavail
+  - action: utter_atmavail
+
+- story: atmeligibility
+  steps:
+  - intent: atmeligibility
+  - action: utter_atmeligibility
+
+- story: atmcharges
+  steps:
+  - intent: atmcharges
+  - action: utter_atmcharges
+
+- story: atmreceive
+  steps:
+  - intent: atmreceive
+  - action: utter_atmreceive
+
+- story: atmreplace
+  steps:
+  - intent: atmreplace
+  - action: utter_atmreplace
+
+- story: atmwithdraw
+  steps:
+  - intent: atmwithdraw
+  - action: utter_atmwithdraw
+
+- story: atmfast
+  steps:
+  - intent: atmfast
+  - action: utter_atmfast
+
+- story: md
+  steps:
+  - intent: md
+  - action: utter_md
+
+- story: research
+  steps:
+  - intent: research
+  - action: utter_research
+
+- story: nearby
+  steps:
+  - intent: nearby
+  - action: utter_nearby
+
+- story: loan
+  steps:
+  - intent: loan
+  - action: utter_loan
+
+- story: fixed
+  steps:
+  - intent: fixed
+  - action: utter_fixed
+
+- story: current
+  steps:
+  - intent: current
+  - action: utter_current
+
+- story: saving
+  steps:
+  - intent: saving
+  - action: utter_saving
+
+- story: bobit
+  steps:
+  - intent: bobit
+  - action: utter_bobit
+
+- story: correspondentbank
+  steps:
+  - intent: correspondentbank
+  - action: utter_correspondent
+
+- story: mbob
+  steps:
+  - intent: mbob
+  - action: utter_mbob
+
+- story: custcategory
+  steps:
+  - intent: custcategory
+  - action: utter_category
+
+- story: gbob
+  steps:
+  - intent: gbob
+  - action: utter_gbob
+
+- story: domcard
+  steps:
+  - intent: domcard
+  - action: utter_domcard
+
+- story: connectagent
+  steps:
+  - intent: connectagent
+  - action: utter_connectagent
+
+- story: pos
+  steps:
+  - intent: pos
+  - action: utter_pos
+
+- story: history
+  steps:
+  - intent: history
+  - action: utter_history
+
+##################################################
+- story: mbob_os
+  steps:
+  - intent: mbob_os
+  - action: utter_mbob_os
+
+- story: mbob_min_os
+  steps:
+  - intent: mbob_min_os
+  - action: utter_mbob_min_os
+
+- story: mbob_charges
+  steps:
+  - intent: mbob_charges
+  - action: utter_mbob_charges
+
+- story: mbob_download
+  steps:
+  - intent: mbob_download
+  - action: utter_mbob_download
+
+- story: mbob_outside
+  steps:
+  - intent: mbob_outside
+  - action: utter_mbob_outside
+
+- story: mbob_no_internet
+  steps:
+  - intent: mbob_no_internet
+  - action: utter_mbob_no_internet
+
+- story: mbob_sim
+  steps:
+  - intent: mbob_sim
+  - action: utter_mbob_sim
+
+- story: mbob_online
+  steps:
+  - intent: mbob_online
+  - action: utter_mbob_online
+
+- story: mbob_pin
+  steps:
+  - intent: mbob_pin
+  - action: utter_mbob_pin
+
+- story: mbob_user
+  steps:
+  - intent: mbob_user
+  - action: utter_mbob_user
+# forms#####################################
+- story: forms
+  steps:
+  - intent: forms
+  - action: utter_forms
+
+- story: directors
+  steps:
+  - intent: directors
+  - action: utter_directors
+
+# remit ##########################################
+- story: remit
+  steps:
+  - intent: remit
+  - action: utter_remit
+
+- story: remit_acc
+  steps:
+  - intent: remit_acc
+  - action: utter_remit_acc
+
+- story: remit_channel
+  steps:
+  - intent: remit_channel
+  - action: utter_remit_channel
+
+- story: remit_open_acc
+  steps:
+  - intent: remit_open_acc
+  - action: utter_remit_open_acc
+
+- story: remit_access
+  steps:
+  - intent: remit_access
+  - action: utter_remit_access
+
+- story: remit_transfer
+  steps:
+  - intent: remit_transfer
+  - action: utter_remit_transfer
+
+- story: remit_withdrawal
+  steps:
+  - intent: remit_withdrawal
+  - action: utter_remit_withdrawal
+
+- story: remit_addition
+  steps:
+  - intent: remit_addition
+  - action: utter_remit_addition
+
+# NCGS #################################################################################
+- story: ncgs_explain
+  steps:
+  - intent: ncgs_explain
+  - action: utter_ncgs_explain
+
+- story: govt_guar
+  steps:
+  - intent: govt_guar
+  - action: utter_govt_guar
+
+- story: guar_period
+  steps:
+  - intent: guar_period
+  - action: utter_guar_period
+
+- story: debt_ratio
+  steps:
+  - intent: debt_ratio
+  - action: utter_debt_ratio
+
+- story: ncgs_eli
+  steps:
+  - intent: ncgs_eli
+  - action: utter_ncgs_eli
+
+- story: ncgs_biz
+  steps:
+  - intent: ncgs_biz
+  - action: utter_ncgs_biz
+
+- story: ncgs_apply
+  steps:
+  - intent: ncgs_apply
+  - action: utter_ncgs_apply
+
+- story: ncgs_part
+  steps:
+  - intent: ncgs_part
+  - action: utter_ncgs_part
+
+- story: ncgs_rate
+  steps:
+  - intent: ncgs_rate
+  - action: utter_ncgs_rate
+
+- story: ncgs_same
+  steps:
+  - intent: ncgs_same
+  - action: utter_ncgs_same
+
+- story: ncgsf
+  steps:
+  - intent: ncgsf
+  - action: utter_ncgsf
+
+- story: ncgs_support
+  steps:
+  - intent: ncgs_support
+  - action: utter_ncgs_support
+
+- story: ncgs_contact
+  steps:
+  - intent: ncgs_contact
+  - action: utter_ncgs_contact
+
+#####################################################################################
+- story: emi
+  steps:
+  - intent: emi
+  - action: utter_emi
+
+
+- story: help
+  steps:
+  - intent: help
+  - action: utter_help
