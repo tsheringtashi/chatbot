@@ -1,0 +1,351 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - bot_challenge
+  - rates
+  - location
+  - opening
+  - atmfacilities
+  - atmavail
+  - atmeligibility
+  - atmcharges
+  - atmreceive
+  - atmreplace
+  - atmwithdraw
+  - atmfast
+  - md
+  - research
+  - nearby
+  - loan
+  - fixed
+  - current
+  - saving
+  - bobit
+  - correspondentbank
+  - mbob
+  - custcategory
+  - gbob
+  - domcard
+  - connectagent
+  - pos
+  - history
+  - mbob_os
+  - mbob_min_os
+  - mbob_charges
+  - mbob_download
+  - mbob_outside
+  - forms
+  - mbob_no_internet
+  - mbob_sim
+  - mbob_online
+  - mbob_pin
+  - directors
+  - remit
+  - remit_acc
+  - remit_channel
+  - remit_open_acc
+  - remit_access
+  - remit_transfer
+  - remit_withdrawal
+  - remit_addition
+  - ncgs_explain
+  - govt_guar
+  - guar_period
+  - debt_ratio
+  - ncgs_eli
+  - ncgs_biz
+  - ncgs_apply
+  - ncgs_part
+  - ncgs_rate
+  - ncgs_same
+  - ncgsf
+  - ncgs_support
+  - ncgs_contact
+  - emi
+  - help
+  - mbob_user
+
+responses:
+  utter_greet:
+  - text: "Kuzuzangpola welcome to the Bank of Bhutan. How may I assist you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, designed by the research team of Bank of Bhutan."
+
+  utter_rates:
+  - text: "The interest rate of Saving Deposit is 4.5%. please click [BOB](https://www.bob.bt) for more information."
+
+  utter_location:
+  - text: "Our Corporate office is located at Norzin Lam, Thimphu, Bhutan."
+
+  utter_opening:
+  - text: "The Bank is opening at 9.00 AM from Monday to Friday."
+
+  utter_atmfacilities:
+  - text: "The facilities that will be offered through ATM as of now are:
+
+    \tCash Withdrawal\n\n
+    \tFast Cash\n\n
+    \tMini statement\n\n
+    \tBalance Inquiry\n\n
+    \tPin Change\n\n
+    \tFunds Transfer (between own accounts of the customer)\n\n
+    \tCheque Book request\n\n
+    \tAccount Statement request\n\n
+    \tCoupon Dispensing"
+
+  utter_atmavail:
+  - text: "All the new accounts opened with the bank have the ATM facility request included in the account opening form. In case you wish to avail ATM Card, customers need to fill in Card Application Form along with the Account Opening Form."
+
+  utter_atmeligibility:
+  - text: " All the literate accounts (Signature Account) maintaining the minimum balance are eligible for the ATM facility."
+
+  utter_atmcharges:
+  - text: "For New customers – Nu.300, Renewal Fee on Expiry of Validity – Nu.200, Replacement – Nu.300, PIN Regeneration Fee – Nu.100. Renewal/Replacement of ATM Card from mBoB is Nu.180."
+
+  utter_atmreceive:
+  - text: "The ATM card is to be collected from the branch that you have applied to or from the Branch at which you have opted to collect from (available in mBoB). The applicant has to personally visit the Branch to collect the Card as it is issued along with the Pin Code which otherwise imposes risk. In case the applicant is not able to come personally to collect the card from the branch, the applicant can send some other person with original authorization signed by him/her."
+
+  utter_atmreplace:
+  - text: "The ATM Card replacement can be done through mBoB or can be replaced by visiting the branch upon filling the Replacement Form. The replacement of cards through mBoB has mentioned below:
+
+
+    \tLogin to mBoB\n\n
+    \tCards/Loans\n\n
+    \tManage Cards\n\n
+    \tCard Replacement/Renewal\n\n
+    \tSelect Account Source\n\n
+    \tSelect Collection Branch (The branch you wish to collect the card)\n\n
+    \tSubmit"
+
+  utter_atmwithdraw:
+  - text: "You can withdraw cash up to Nu 40,000 in a day from ATM. The maximum amount per transaction is 15,000/- for BoB Card Holder and the limit for other Card user depends on their Issuer Bank’s limit."
+
+  utter_atmfast:
+  - text: "Fast Cash menu is the first menu that appears on the ATM after validating your pin. It gives you the option to select the amount of cash withdrawal from the displayed amounts in order to expedite your transaction."
+
+  utter_md:
+  - text: "The CEO of Bank of Bhutan is Mr Dorji Kadin"
+
+  utter_research:
+  - text: " Research project by the bank at the moment are as follows:
+  
+  \tchatbot\n\n
+  \tCentral Data Repository\n\n
+  \tLOS\n\n
+  \tInternet Banking\n\n
+  \tLottery Integration"
+
+
+  utter_nearby:
+  - text: "The nearest ATM is at the Thimphu main branch."
+
+  utter_loan:
+  - text: "For loan details please visit [LOAN INTEREST RATES](https://www.bob.bt/interest-service-charges/loan-interest-rates/)"
+
+  utter_fixed:
+  - text: "For fixed deposit details please visit [FIXED DEPOSIT](https://www.bob.bt/business-banking/save-deposits/fixed-deposits/)"
+
+  utter_current:
+  - text: "For current deposit details please visit [CURRENT DEPOSIT](https://www.bob.bt/business-banking/save-deposits/current-deposit/)"
+
+  utter_saving:
+  - text: "For current deposit details please visit [SAVING DEPOSIT](https://www.bob.bt/personal-banking/save-deposits/savings-deposit-account/)"
+
+  utter_bobit:
+  - text: "You can transfer money with BOBit for Non-Residential Bhutanese (NRB) residing exclusively in Australia.\n\nIt is facilitated by the Bank of Bhutan in partnership with FLEXEWALLET PTY LIMITED, a company incorporated in Australia.."
+
+
+  utter_correspondent:
+  - text: "To know about the correspondent bank please visit [CORRESPONDENT BANKS] (https://www.bob.bt/international-banking/correspondent-banks/)"
+
+  utter_mbob:
+  - text: "mBoB is simple and convenient application to access your bank account on your phone. mBoB is now available on all mobile phones, ranging from character-based mobile phones to the latest smart phones."
+
+  utter_category:
+  - text: "General =  1 ≤ 100,000\n\n
+  Silver	1 ≤ 500,000\n\n
+  Gold	1 ≤ No Limit\n\n
+  Thumbprint	1≤ 5,000"
+
+  utter_gbob:
+  - text: "goBoB is a virtual wallet powered by Bank of Bhutan Limited through which a user can store his or her money for future online/offline transactions "
+  - text: "For more information on gBoB please visit [gBoB] (https://www.bob.bt/personal-banking/digital-wallet-gobob/gobob/)"
+
+  utter_domcard:
+  - text: "Please visit [DOMESTIC CREDIT CARD] (https://www.bob.bt/personal-banking/card/domestic-credit-card/) for more information"
+
+  utter_connectagent:
+  - text: "You may find more information in the link [BOBCONNECT AGENT](https://www.bob.bt/personal-banking/alternate-delivery-channel/bobconnect-agent/)"
+
+  utter_pos:
+  - text: "For your information please visit [POS] (https://www.bob.bt/personal-banking/alternate-delivery-channel/pos-acquiring/)"
+
+  utter_history:
+  - text: "The Bank of Bhutan is the oldest bank in the country started in May 1968. It was the Central Bank of Bhutan till 1982. Today, the largest commercial Bank has 47 branch offices in every Dzongkhag. The Bank started Core Banking Solution in 2009 for ATMs, Internet Banking, POS and Mobile & Agency Banking Services."
+
+# mBoB ################################################################################################################3
+  utter_mbob_os:
+  - text: "mBoB is available in major operating systems like Android and iOS."
+
+  utter_mbob_min_os:
+  - text: "You can use any mobile device ranging from the simple character-based to the latest smart phones. The mBoB App is supported on andriod version 5 and above and iphone version 11 and above."
+
+  utter_mbob_charges:
+  - text: "Registration is free & there are NO charges for other services as well. However, BoB may choose to apply minimal charges on some services at a later date after notifying the charges in our website www.bob.bt."
+
+  utter_mbob_download:
+  - text: "Always download from authorized stores like Playstore & Appstore respectively. Just type mBoB and search to download and install."
+
+  utter_mbob_outside:
+  - text: "Yes, from anywhere around the world as long as there is an internet connection."
+
+  utter_forms:
+  - text: "You can download and submit form to open an account with any branch office. Click [DOWNLOAD FORMS](https://www.bob.bt/service-and-support/download-forms/)"
+
+  utter_mbob_no_internet:
+  - text: "Dial *262# from your registered mobile number to avail the service. But this mode of service is available for use within Bhutan only."
+
+  utter_mbob_sim:
+  - text: "As long as you are using the SIM for either Bhutan Telecom or Tcell or as long as you have internet connection in your phone."
+
+  utter_mbob_online:
+  - text: "if your mobile number or email ID is updated in BoB, you can register through mBoB app instantly from anywhere by submitting your Account number, CID number and agreeing to the terms and conditions. You can also visit your prefererd BoB branch office to register for the Service."
+
+  utter_mbob_pin:
+  - text: "M-pin and T-Pin can be any four digit number of your choice. M-Pin is to login to mBoB app while T-Pin is to authentiate and authorize the transaction. You can reset the M-pin and T-pin by pressing forgot my M-pin on mBoB app"
+
+  utter_mbob_user:
+  - text: "You can reset the User ID by pressing Forgot User ID on mBoB app."
+
+  utter_remit:
+  - text: "It is a platform initiated by the RMA to facilitate non-resident Bhutanese to conveniently apply for foreign currency account with an authorized bank in Bhutan"
+
+  utter_directors:
+  - text: "The directors of the Bank of Bhutan are the following:\n\n
+  Corporate Affairs Director: Mr. Tshering Tenzin\n\n
+  Operation Director  : Miss Karma Dema\n\n
+  Credit Director : Mr. Prem Moktan\n\n
+  ICT Director : Mr. Tsewang Dorji"
+
+  utter_remit_acc:
+  - text: "You can get\n\n
+   
+   Non-resident Bhutanese Foreign Currency Account (NRBFC)- Saving Deposit\n\n
+   Non-resident Bhutanese Ngultrum Account (NRBNC)- Saving and Fixed Deposit"
+
+  utter_remit_channel:
+  - text: "For NRBFC:\n\n Internet Banking, International debit card
+    For NRBNC:\n\n Internet Banking, International and Domestic Debit cards, mBOB"
+
+  utter_remit_open_acc:
+  - text: "Apply online through [RemitBhutan](www.rma.org.bt)\n\n
+    RMA verifies and forwards to our Bank\n\n
+    Bank processes and open your FC account"
+
+  utter_remit_access:
+  - text: "You can view your account balance and transaction details through internet banking and mobile banking."
+
+  utter_remit_transfer:
+  - text: "You can use the following modes to transfer money:\n\n
+
+    SWIFT- Thorough our [correspondent banks](https://www.bob.bt/international-banking/correspondent-banks/)\n\n
+    International money transfer partners- IME remit and EXPRESS MONEY"
+
+  utter_remit_withdrawal:
+  - text: "a) Withdrawal of convertible currency in cash is not permitted from your Foreign Currency
+account. Cash withdrawal in Ngultrum only will be allowed.\n\n
+
+b) Foreign currency in your account can be utilized for meeting the cost of import of goods and
+services against import license/invoices and on the expenses relating to Travel, Studies,
+Business and Medical treatment as per the Foreign Exchange Rules and Regulations of the RMA
+in force."
+
+  utter_remit_addition:
+  - text: "1. Minimum balance retention in the account is not mandatory.\n\n
+
+2. You are permitted full repatriation of the principal amount remitted in the currency of remittance.\n\n
+
+3. You are permitted to maintain the foreign currency account upon return to the country permanently.\n\n
+
+4. You can earn Interest on your Foreign Currency Account."
+
+# ncgs#####################################################################################################################
+  utter_ncgs_explain:
+  - text: "The National Credit Guarantee Scheme (NCGS) is a counter cyclical policy measure during the COVID-19 situation to stimulate investments through enhanced access to finance. The Government will guarantee a portion of the loan under the scheme."
+
+  utter_govt_guar:
+  - text: "The Guarantee will be limited to debt financing of the project. NCGS coverage will not exceed Nu. 30 million."
+
+  utter_guar_period:
+  - text: "The guarantee period will not exceed a maximum of three years."
+
+  utter_debt_ratio:
+  - text: "The Debt to Equity Ratio under the NCGS will be 90:10, which is significantly lower than the existing 75:25. However, for start-ups under CSI category, equity requirement will be exempted."
+
+  utter_ncgs_eli:
+  - text: "All aspiring Bhutanese desiring to start new projects or upgrade existing projects, under the category of Cottage and Small, Medium and Large industries."
+
+  utter_ncgs_biz:
+  - text: "This Scheme is available to eligible business of large, medium and CSI, including primary producer, which falls under the category of productive sector. The definition of productive sectors and full details of the eligibility criteria are available through the NCGS website and the participating Bank websites."
+
+  utter_ncgs_apply:
+  - text: "The NCGS is accessible by direct application to participating Banks. The Banks will start receiving application from October 23, 2020."
+
+  utter_ncgs_part:
+   - text: "The Bank of Bhutan, Bhutan Development Bank and National CSI Development Bank will participate in the NCGS from the launch."
+
+  utter_ncgs_rate:
+  - text: "The interest rates will be applicable as follows:\n\n
+
+a) Cottage & Small industries:\n\n
+
+7% during gestation period; and 8 % after commercial operation.\n\n
+
+b) Medium & Large industries:\n\n
+
+8.75% during gestation period; and 9.75 % after commercial operation"
+
+  utter_ncgs_same:
+  - text: "A separate loan application form is available for loans under the NCGS, which will be made available on the Banks’ websites before October 23, 2020."
+
+  utter_ncgsf:
+  - text: "NCGSF is one-stop shop for NCGS related support and information."
+
+  utter_ncgs_support:
+  - text: "In addition to facilitating the guarantee approval, the NCGSF will support project development guidance; facilitate clearances and approval for business establishment; and smooth implementation of the projects under the NCGS."
+
+  utter_ncgs_contact:
+  - text: "The NCGSF is located in Chubachu, opposite of the Tarayana Complex, Tourism Council of Bhutan Office. Till permanent lines are established, you can contact us on 17341733 (Ugyen), 17587762 (Namgyal) and 77106677(Yeshi)."
+
+  utter_help:
+  - text: "Sure. How can I help you?."
+#########################################################################################################################################
+
+  utter_emi:
+  - text: "You may check with [EMI CALCULATOR](https://www.bob.bt/service-and-support/emi-calculator/)."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
